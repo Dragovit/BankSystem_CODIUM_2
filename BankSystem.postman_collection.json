@@ -1,0 +1,54 @@
+{
+	"info": {
+		"_postman_id": "8a17fd51-5644-41c9-b604-c0e1d3964cd4",
+		"name": "BankSystem",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "addPerson",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Jozo\",\r\n    \"surname\":\"Maly\",\r\n    \"personalNumber\":\"0402499891\",\r\n    \"bankCards\":[\r\n        {\r\n            \"cardNumber\":\"1172488777946583\",\r\n            \"expDate\":\"0503\",\r\n            \"cardHolder\":\"Jozo Maly\",\r\n            \"cvc\":\"122\"\r\n        },\r\n        {\r\n            \"cardNumber\":\"9222767294944583\",\r\n            \"expDate\":\"0703\",\r\n            \"cardHolder\":\"Jozo Maly\",\r\n            \"cvc\":\"442\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/addPerson",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"addPerson"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "findAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/findAll",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"findAll"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
